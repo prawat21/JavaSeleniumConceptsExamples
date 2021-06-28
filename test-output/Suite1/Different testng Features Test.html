@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>TestNG:  Different testng Features Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Different testng Features Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 05 12:57:20 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>159 seconds (159357 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestNG.GoogleTest.googleLogoTest()'><b>googleLogoTest</b><br>Test class: com.TestNG.GoogleTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id backgroundImage
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LINUX0000914DEL&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.TestNG.GoogleTest.googleLogoTest(GoogleTest.java:35)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace940087898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace940087898'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id backgroundImage
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LINUX0000914DEL&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.TestNG.GoogleTest.googleLogoTest(GoogleTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>60</td>
+<td>com.TestNG.GoogleTest@7c29daf3</td></tr>
+<tr>
+<td title='com.TestNG.GoogleTitleTest.googleLogoTest()'><b>googleLogoTest</b><br>Test class: com.TestNG.GoogleTitleTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id backgroundImage
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LINUX0000914DEL&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.TestNG.GoogleTitleTest.googleLogoTest(GoogleTitleTest.java:37)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815370847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815370847'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id backgroundImage
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LINUX0000914DEL&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.TestNG.GoogleTitleTest.googleLogoTest(GoogleTitleTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>60</td>
+<td>com.TestNG.GoogleTitleTest@9660f4e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestNG.GoogleTest.googleTitleTest()'><b>googleTitleTest</b><br>Test class: com.TestNG.GoogleTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.GoogleTest@7c29daf3</td></tr>
+<tr>
+<td title='com.TestNG.GoogleTitleTest.googleTitleTest()'><b>googleTitleTest</b><br>Test class: com.TestNG.GoogleTitleTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.GoogleTitleTest@9660f4e</td></tr>
+<tr>
+<td title='com.TestNG.TestNGBasics.googleTitleTest()'><b>googleTitleTest</b><br>Test class: com.TestNG.TestNGBasics</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.TestNGBasics@7494e528</td></tr>
+<tr>
+<td title='com.TestNG.TestNGFeatures.homepageTest()'><b>homepageTest</b><br>Test class: com.TestNG.TestNGFeatures</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.TestNGFeatures@6c49835d</td></tr>
+<tr>
+<td title='com.TestNG.ExceptionTimeOutTest.infiniteLoopTest()'><b>infiniteLoopTest</b><br>Test class: com.TestNG.ExceptionTimeOutTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.ExceptionTimeOutTest@4bbfb90a</td></tr>
+<tr>
+<td title='com.TestNG.TestNGFeatures.loginTest()'><b>loginTest</b><br>Test class: com.TestNG.TestNGFeatures</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.TestNGFeatures@6c49835d</td></tr>
+<tr>
+<td title='com.TestNG.TestNGFeatures.regisPage()'><b>regisPage</b><br>Test class: com.TestNG.TestNGFeatures</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.TestNGFeatures@6c49835d</td></tr>
+<tr>
+<td title='com.TestNG.TestNGFeatures.searchPageTest()'><b>searchPageTest</b><br>Test class: com.TestNG.TestNGFeatures</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.TestNGFeatures@6c49835d</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.InvocationCountTest.sum()'><b>sum</b><br>Test class: com.TestNG.InvocationCountTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.InvocationCountTest@5a8806ef</td></tr>
+<tr>
+<td title='com.TestNG.ExceptionTimeOutTest.test1()'><b>test1</b><br>Test class: com.TestNG.ExceptionTimeOutTest</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;100A&quot;
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.TestNG.ExceptionTimeOutTest.test1(ExceptionTimeOutTest.java:19)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415157681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415157681'><pre>java.lang.NumberFormatException: For input string: &quot;100A&quot;
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.TestNG.ExceptionTimeOutTest.test1(ExceptionTimeOutTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.TestNG.ExceptionTimeOutTest@4bbfb90a</td></tr>
+<tr>
+<td title='com.TestNG.GoogleTest.test3()'><b>test3</b><br>Test class: com.TestNG.GoogleTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.GoogleTest@7c29daf3</td></tr>
+<tr>
+<td title='com.TestNG.GoogleTest.test4()'><b>test4</b><br>Test class: com.TestNG.GoogleTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.GoogleTest@7c29daf3</td></tr>
+<tr>
+<td title='com.TestNG.GoogleTest.test5()'><b>test5</b><br>Test class: com.TestNG.GoogleTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.GoogleTest@7c29daf3</td></tr>
+<tr>
+<td title='com.TestNG.GoogleTest.test6()'><b>test6</b><br>Test class: com.TestNG.GoogleTest</td>
+<td></td>
+<td>0</td>
+<td>com.TestNG.GoogleTest@7c29daf3</td></tr>
+<tr>
+<td title='com.parameters.ParameterTest.yahooLoginTest()'><b>yahooLoginTest</b><br>Test class: com.parameters.ParameterTest<br>Parameters: https://login.yahoo.com/, puneetrawat85@yahoo.com</td>
+<td></td>
+<td>4</td>
+<td>com.parameters.ParameterTest@5e853265</td></tr>
+</table><p>
+</body>
+</html>
