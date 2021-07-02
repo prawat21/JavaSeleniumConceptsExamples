@@ -12,7 +12,7 @@ public class HandleDropDown {
 		WebDriver driver = new ChromeDriver(); // Launch Chrome Driver
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		//driver.get("https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html"); // Enter URL
+		driver.get("https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html"); // Enter URL
 		// Handling dropdown
 		
 		Select select = new Select(driver.findElement(By.id("select-demo")));
@@ -23,8 +23,8 @@ public class HandleDropDown {
 		
 		// Handle dynamic dropdown at Runtime
 		
-		driver.get("https://www.spicejet.com/"); // Enter URL
-		driver.findElement(By.xpath("//*[@id = 'ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+		//driver.get("https://www.spicejet.com/"); // Enter URL
+		//driver.findElement(By.xpath("//*[@id = 'ctl00_mainContent_ddl_originStation1_CTXT']")).click();
 		
 		
 		
