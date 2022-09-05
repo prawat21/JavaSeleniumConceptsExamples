@@ -1,19 +1,21 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
- 
-<suite name="Suite1" verbose="1" >
-    <test name = "Different testng Features Test">
-    <classes>
-    <class name = "com.TestNG.ExceptionTimeOutTest" />
-    <class name = "com.TestNG.GoogleTest" />
-    <class name = "com.TestNG.GoogleTitleTest" />
-    <class name = "com.TestNG.InvocationCountTest" />
-    <class name = "com.TestNG.TestNGBasics" />
-    <class name = "com.TestNG.TestNGFeatures" />
-    <class name = "com.parameters.ParameterTest" />
-    </classes>>
-    
-    <parameter name = "url" value = "https://login.yahoo.com/" />
-    <parameter name = "emailId" value = "puneetrawat85@yahoo.com" />
-    
- </test>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+	<test name="Different testng Features">
+	
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://login.yahoo.com/" />
+		<parameter name="emailId" value="puneetrawat85@yahoo.com" />
+
+		<classes>
+			<class name="com.TestNG.ExceptionTimeOutTest" />
+			<class name="com.TestNG.GoogleTest" />
+			<class name="com.TestNG.GoogleTitleTest" />
+			<class name="com.TestNG.InvocationCountTest" />
+			<class name="com.TestNG.TestNGBasics" />
+			<class name="com.TestNG.TestNGFeatures" />
+			<class name="com.parameters.ParameterTest" />
+		</classes>
+
+	</test>
 </suite>

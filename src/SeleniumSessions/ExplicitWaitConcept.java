@@ -14,7 +14,7 @@ public class ExplicitWaitConcept {
 		//It is a concept of the dynamic wait which wait dynamically for specific conditions. 
 		//It can be implemented by WebDriverWait class.
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Puneet.Rawat/Downloads/chromedriver1/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
 		// Start browser
 		WebDriver driver = new ChromeDriver();
 

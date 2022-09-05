@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test thread-count="5" name="Different testng Features Test(failed)">
-    <parameter name="emailId" value="puneetrawat85@yahoo.com"/>
-    <parameter name="url" value="https://login.yahoo.com/"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.GoogleTitleTest">
+      <class name="com.parameters.ParameterTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="googleLogoTest"/>
-          <include name="setUp"/>
+          <include name="yahooLoginTest"/>
         </methods>
-      </class> <!-- com.TestNG.GoogleTitleTest -->
-      <class name="com.TestNG.GoogleTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="googleLogoTest"/>
-        </methods>
-      </class> <!-- com.TestNG.GoogleTest -->
+      </class> <!-- com.parameters.ParameterTest -->
     </classes>
-  </test> <!-- Different testng Features Test(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
